@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0.0365971, 1 ), 0.0, -2.83466, 0, 0, Vector2( 0.94624, 0.0771316 ), -0.49338, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=2]
+colors = PoolColorArray( 0.796612, 0, 1, 1, 1, 0, 0.5237, 1 )
+
+[node name="ps_2" type="CPUParticles2D"]
+position = Vector2( 545.523, 1143.49 )
+rotation = 2.91373
+amount = 150
+lifetime = 2.0
+preprocess = 20.0
+speed_scale = 0.1
+emission_shape = 2
+emission_rect_extents = Vector2( 540, 1000 )
+flatness = 1.0
+angular_velocity = 45.0
+angular_velocity_random = 0.2
+radial_accel = 200.0
+radial_accel_random = 0.5
+angle = 45.0
+angle_random = 1.0
+scale_amount = 10.0
+scale_amount_curve = SubResource( 1 )
+color_ramp = SubResource( 2 )
+
